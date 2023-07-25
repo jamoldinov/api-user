@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css2?family=Habibi&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Habibi", serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+  background-color: darkslategrey;
+  color: antiquewhite;
+}
+
+.chac{
+    display: flex;
+    gap: 30px;
+    padding: 25px;
+}
+#check{
+    margin-right: 6px;
+    pointer-events: none;
+}
+.item {
+    gap: 20px;
+}
+/* input{
+ width: 12px;
+} */
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+ul li {
+    list-style: none;
+}
+label {
+    font-weight: 600;
+    color:black;
+    cursor: pointer;
+    user-select: none;
+    font-size: 20px;
+}
+#check:checked{
+    accent-color: green;
+}
+#check:checked ~ label{
+    color: green;
+}
+
+#chack:checked{
+    accent-color: red;
+}
+#chack:checked ~ label{
+    color: red;
+}
+#chack{
+    margin-right: 6px;
+    pointer-events: none;
+}
